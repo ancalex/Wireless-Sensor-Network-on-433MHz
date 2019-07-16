@@ -9,6 +9,7 @@ int measurements_number; //same for each sensor, total measured data sensor_numb
 int transmission_interval;
 int transmission_time;
 
+//function to generate timings for a poisson process
 double ran_expo(double lambda) {
 	double u;
 	u = rand() / (RAND_MAX + 1.0);
